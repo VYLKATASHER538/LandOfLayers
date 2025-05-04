@@ -1,14 +1,16 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = {
     mode: "development",
     devtool: "eval-source-map",
-    entry: "./src/main.js",
+    entry: "./src/index.js",
     output: {
-        path: path.resolve(process.cwd(), 'dist'),
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
         filename: "bundle.min.js"
     },
     module: {
@@ -46,6 +48,11 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./index.html"
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/404.html', to: '404.html' }
+            ]
         })
     ]
 };

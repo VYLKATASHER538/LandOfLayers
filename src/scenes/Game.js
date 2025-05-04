@@ -1,13 +1,13 @@
 import { Scene } from 'phaser';
-import Player from '../sprites/Player';
-import LevelGenerator from '../classes/LevelGenerator';
-import {Mob, Mobs} from '../sprites/Mob';
-import {Bomb, Bombs} from '../sprites/Bomb';
-import {Minion, Minions} from '../sprites/Minion';
-import {Bullet, Bullets} from '../sprites/Bullet';
-import {BouncyBullet, BouncyBullets} from '../sprites/BouncyBullet';
-import {Boss, Bosses} from '../sprites/Boss';
-import {Explosion, Explosions} from '../sprites/Explosion';
+import Player from '../sprites/Player.js';
+import LevelGenerator from '../classes/LevelGenerator.js';
+import {Mob, Mobs} from '../sprites/Mob.js';
+import {Bomb, Bombs} from '../sprites/Bomb.js';
+import {Minion, Minions} from '../sprites/Minion.js';
+import {Bullet, Bullets} from '../sprites/Bullet.js';
+import {BouncyBullet, BouncyBullets} from '../sprites/BouncyBullet.js';
+import {Boss, Bosses} from '../sprites/Boss.js';
+import {Explosion, Explosions} from '../sprites/Explosion.js';
 
 export class Game extends Scene
 {
