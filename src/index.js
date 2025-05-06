@@ -1,6 +1,6 @@
-import { Game } from './scenes/Game';
-import { ManualScene } from './scenes/Manual';
-import MainMenu from './scenes/MainMenu';
+import { Game } from './scenes/Game.js';
+import { ManualScene } from './scenes/Manual.js';
+import MainMenu from './scenes/MainMenu.js';
 
 const config = {
     type: Phaser.AUTO,
