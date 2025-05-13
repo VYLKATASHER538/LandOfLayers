@@ -1,5 +1,5 @@
 import { Scene } from 'phaser';
-import LevelGenerator from '../classes/LevelGenerator.js';
+import LevelGenerator from '../classes/LevelGenerator';
 
 export default class MainMenu extends Scene
 {
